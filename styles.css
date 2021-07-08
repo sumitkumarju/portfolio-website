@@ -1,0 +1,149 @@
+html,
+body {
+  height: 100%;
+  margin: 0 10px;
+  font-family: "Permanent Marker", cursive;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: "Russo One", sans-serif;
+  font-weight: 500;
+}
+p {
+  font-size: 1.1vw;
+}
+ul {
+  margin-left: -25px;
+  list-style-type: none;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  font-weight: lighter;
+}
+a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+body {
+  display: grid;
+  grid: auto-flow min-content / 1fr 2fr;
+  grid-template-areas:
+    "header     header   "
+    "profilepic bio      "
+    "skill      role     "
+    "quicklink  container"
+    "footer     footer   ";
+  grid-gap: 10px;
+}
+
+header {
+  grid-area: header;
+}
+footer {
+  grid-area: footer;
+  background-color: #393e46;
+  color: #eeeeee;
+  text-align: center;
+}
+
+.profilepic {
+  grid-area: profilepic;
+  display: grid;
+  justify-content: center;
+}
+.profilepic > img {
+  height: 30vh;
+  border-radius: 50%;
+  box-shadow: 2px 4px 6px #393e46;
+}
+.bio {
+  grid-area: bio;
+  display: grid;
+  justify-content: left;
+  padding-left: 2%;
+  border-radius: 5px 0 0 0;
+  background-color: #393e46;
+  color: #eeeeee;
+}
+
+.skill {
+  grid-area: skill;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px 0 0 0;
+  background-color: #393e46;
+  color: #eeeeee;
+  padding: 5%;
+}
+.role {
+  grid-area: role;
+  background-color: #393e46;
+  color: #eeeeee;
+  padding: 3% 8%;
+}
+.role > ul {
+  list-style-type: "\1f4cc";
+}
+
+.quicklink {
+  grid-area: quicklink;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #393e46;
+  color: #eeeeee;
+}
+.quicklink > ul {
+  list-style-type: "\2B50";
+}
+.container {
+  grid-area: container;
+  background-color: #00adb5;
+  display: grid;
+  grid: auto-flow 25em / 1fr;
+  padding: 2%;
+  overflow-y: auto;
+}
+.scrollable {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow-y: scroll;
+}
+.project {
+  background-color: #393e46;
+  height: 44vh;
+  width: 25vw;
+  margin-bottom: 10px;
+  padding: 4%;
+  text-align: center;
+  color: #eeeeee;
+  border-radius: 5px;
+}
+.project img {
+  height: 50%;
+  max-width: 80%;
+}
+.tech {
+  display: flex;
+  justify-content: space-around;
+  background-color: #00adb5;
+  border-radius: 5px;
+  padding: 5%;
+}
+#quote {
+  width: max-content;
+  margin: 1% auto;
+  padding: 1%;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+}
