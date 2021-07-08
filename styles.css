@@ -105,7 +105,7 @@ h1 {
   margin: 2rem auto;
   letter-spacing: 0.1em; /*Adjust as needed*/
   max-width: min-content;
-  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
