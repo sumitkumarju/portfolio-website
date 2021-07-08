@@ -10,7 +10,7 @@ async function getQuote() {
 }
 
 function setQuotehelper(data) {
-  data = data.filter((q) => q.text.length < 100);
+  data = data.filter((q) => q.text.length < 50);
 
   setInterval(() => {
     setQuote(data[Math.floor(Math.random() * data.length)]);
