@@ -1,4 +1,11 @@
+window.addEventListener("load", function () {
+  const loader = document.querySelector(".loader");
+  loader.className += " hidden";
+});
+
 window.onload = function () {
+  const loader = document.querySelector("#name");
+  loader.className += " type";
   getQuote().then((data) => setQuotehelper(data));
 };
 
