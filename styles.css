@@ -195,6 +195,10 @@ footer {
   list-style-type: "\1f4cc";
 }
 
+.role > ul > ul {
+  list-style-type: "\1f4cc";
+}
+
 .quicklink {
   grid-area: quicklink;
   display: grid;
