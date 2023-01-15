@@ -203,6 +203,15 @@ footer {
   background-color: #393e46;
   color: #eeeeee;
 }
+
+.quicklink > ul {
+  list-style-type: none;
+}
+
+.tech > ul {
+  list-style-type: none;
+}
+
 .link {
   display: flex;
   /* flex-direction: column; */
