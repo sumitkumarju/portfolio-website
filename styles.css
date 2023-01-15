@@ -125,7 +125,10 @@ footer {
   padding-bottom: 2%;
   background-color: #393e46;
   color: #eeeeee;
-  margin: 2rem;
+}
+
+#name {
+  margin: 5rem auto 2rem auto;
 }
 
 .type {
