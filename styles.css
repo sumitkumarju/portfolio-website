@@ -126,6 +126,9 @@ footer {
   background-color: #393e46;
   color: #eeeeee;
 }
+.bio-wrapper {
+ margin-bottom: 2rem;
+}
 
 #name {
   margin: 5rem auto 2rem auto;
