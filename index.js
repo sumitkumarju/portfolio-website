@@ -10,9 +10,17 @@ window.onload = function () {
 };
 
 async function getQuote() {
-  const url = "https://cors-anywhere.herokuapp.com/https://type.fit/api/quotes";
-  const response = await fetch(url);
-  var data = await response.json();
+  const proxy = "https://cors-anywhere.herokuapp.com/";
+  const url = "https://type.fit/api/quotes";
+
+  const response = await fetch(proxy + url, {
+    headers: {
+      "Origin": "https://sumitkumarju.github.io",
+      "X-Requested-With": "XMLHttpRequest"
+    }
+  });
+
+  const data = await response.json();
   return data;
 }
 
