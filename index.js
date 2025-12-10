@@ -10,7 +10,7 @@ window.onload = function () {
 };
 
 async function getQuote() {
-  const url = "https://type.fit/api/quotes";
+  const url = "https://cors-anywhere.herokuapp.com/https://type.fit/api/quotes";
   const response = await fetch(url);
   var data = await response.json();
   return data;
